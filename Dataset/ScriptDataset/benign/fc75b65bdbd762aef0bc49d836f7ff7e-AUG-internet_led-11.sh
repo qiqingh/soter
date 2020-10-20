@@ -1,2 +1,0 @@
-	yellow_led_blink
-	switch_port0_led_off

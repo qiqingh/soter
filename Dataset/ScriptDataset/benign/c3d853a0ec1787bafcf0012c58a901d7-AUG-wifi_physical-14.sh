@@ -1,9 +1,0 @@
-	PHY_IF=$1
-	SYSCFG_INDEX=`syscfg_get "$PHY_IF"_syscfg_index`
-	SYSCFG_RTS_THRESHOLD=`syscfg_get "$SYSCFG_INDEX"_rts_threshold`
-	if [ -n "$SYSCFG_RTS_THRESHOLD" ] && [ $SYSCFG_RTS_THRESHOLD -ge 255 ] && [ $SYSCFG_RTS_THRESHOLD -le 2346 ]; then
-		RTS_THRESHOLD=$SYSCFG_RTS_THRESHOLD
-	else
-		RTS_THRESHOLD=2347
-	fi
-	echo "$RTS_THRESHOLD"

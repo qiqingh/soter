@@ -1,1 +1,0 @@
-	echo "[Language] $@" > /dev/console

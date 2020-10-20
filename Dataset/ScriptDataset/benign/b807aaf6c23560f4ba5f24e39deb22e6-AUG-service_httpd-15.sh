@@ -1,1 +1,0 @@
-    eval `utctx_cmd get http_admin_user http_admin_port http_admin_password mgmt_http_enable mgmt_https_enable mgmt_wan_access  mgmt_wan_httpaccess mgmt_wan_httpsaccess mgmt_wan_httpport mgmt_wan_httpsport ldal_wl_passphrase lego_enabled dot_local_domain dot_local_hostname`

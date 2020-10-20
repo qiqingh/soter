@@ -1,1 +1,0 @@
-	echo "[ddns] $@" > /dev/console

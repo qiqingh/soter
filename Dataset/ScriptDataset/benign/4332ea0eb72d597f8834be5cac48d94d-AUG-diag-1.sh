@@ -1,1 +1,0 @@
-	status_led="$boot"

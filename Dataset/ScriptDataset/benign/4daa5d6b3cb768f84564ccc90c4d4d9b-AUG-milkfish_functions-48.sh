@@ -1,1 +1,0 @@
-    openserctl $1

@@ -1,3 +1,0 @@
-	LAST_TIME=$(cat $UPDFILE)
-	[ -z "$LAST_TIME" ] && LAST_TIME=0
-	[ $LAST_TIME -gt $CURR_TIME ] && LAST_TIME=0

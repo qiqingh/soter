@@ -1,1 +1,0 @@
-	log "Unknown led status!!"

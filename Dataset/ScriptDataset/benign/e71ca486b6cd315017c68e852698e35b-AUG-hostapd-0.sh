@@ -1,2 +1,0 @@
-. /lib/functions/network.sh
-

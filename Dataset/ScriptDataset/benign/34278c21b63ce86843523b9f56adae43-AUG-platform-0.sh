@@ -1,4 +1,0 @@
-REQUIRE_IMAGE_METADATA=1
-RAMFS_COPY_BIN=/usr/sbin/nandwrite
-CI_KERNPART=none
-

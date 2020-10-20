@@ -1,1 +1,0 @@
-	hostapd_common_cleanup

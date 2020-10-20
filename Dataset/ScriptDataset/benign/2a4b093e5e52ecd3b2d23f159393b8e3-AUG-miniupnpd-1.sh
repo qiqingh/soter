@@ -1,1 +1,0 @@
-	echo "[Miniupnpd] $@" > /dev/console

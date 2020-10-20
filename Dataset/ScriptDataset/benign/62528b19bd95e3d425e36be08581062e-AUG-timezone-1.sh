@@ -1,1 +1,0 @@
-	echo "[timezone] $@" > /dev/console

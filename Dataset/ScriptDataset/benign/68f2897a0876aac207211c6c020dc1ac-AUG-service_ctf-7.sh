@@ -1,1 +1,0 @@
-    $CTF_DISABLE_FUNC

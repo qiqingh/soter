@@ -1,1 +1,0 @@
-    rm -f $IGD_MONITOR_CRON_JOB

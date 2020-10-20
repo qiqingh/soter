@@ -1,1 +1,0 @@
-    nvram set $1
