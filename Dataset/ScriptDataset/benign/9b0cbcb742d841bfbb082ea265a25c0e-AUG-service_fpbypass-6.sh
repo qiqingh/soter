@@ -1,0 +1,1 @@
+    $CTF_ENABLE_FUNC

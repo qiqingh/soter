@@ -1,0 +1,8 @@
+	printf "Usage:\n"
+	printf "\tall: execute full process to update system\n"
+	printf "\tstart: start DPI system\n"
+	printf "\tstop: stop DPI system\n"
+	printf "\tbackup: backup DPI binaries\n"
+	printf "\tupdate: update DPI binaries\n"
+	printf "\trestore: restore DPI binaries\n"
+	printf "\thelp and blank: show help\n"

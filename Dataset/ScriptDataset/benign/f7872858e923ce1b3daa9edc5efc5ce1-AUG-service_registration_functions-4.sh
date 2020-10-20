@@ -1,0 +1,11 @@
+   RDE_SERVICE=$1
+   RDE_HANDLER=$2
+   if [ -z "$RDE_SERVICE" ] || [ -z "$RDE_HANDLER" ] ; then
+      return 1
+   fi
+   RDE_START_STRING="${RDE_SERVICE}-start|${RDE_HANDLER}|NULL|${TUPLE_FLAG_EVENT}"
+   RDE_STOP_STRING="${RDE_SERVICE}-stop|${RDE_HANDLER}|NULL|${TUPLE_FLAG_EVENT}"
+   RDE_RESTART_STRING="${RDE_SERVICE}-restart|${RDE_HANDLER}|NULL|${TUPLE_FLAG_EVENT}"
+   sm_register_one_event $RDE_SERVICE "$RDE_START_STRING"
+   sm_register_one_event $RDE_SERVICE "$RDE_STOP_STRING"
+   sm_register_one_event $RDE_SERVICE "$RDE_RESTART_STRING"

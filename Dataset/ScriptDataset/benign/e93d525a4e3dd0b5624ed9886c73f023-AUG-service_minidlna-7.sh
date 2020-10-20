@@ -1,0 +1,1 @@
+	sysevent set eth-status

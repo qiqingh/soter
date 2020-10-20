@@ -1,0 +1,1 @@
+    ifdown wan6

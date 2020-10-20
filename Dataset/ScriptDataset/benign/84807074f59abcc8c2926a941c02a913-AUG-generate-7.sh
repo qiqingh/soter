@@ -1,0 +1,11 @@
+	local varname="$1"
+	local class="$2"
+	local name="$3"
+	local type="$4"
+	local default="$5"
+	local tmp tmp1 tmp2
+	config_get tmp1 "$class" "$name"
+	config_get tmp2 "${class}_${type}" "$name"
+	tmp="${tmp2:-$tmp1}"
+	tmp="${tmp:-$tmp2}"
+	export ${varname}="${tmp:-$default}"

@@ -1,0 +1,5 @@
+	local var="$1"
+	local val="$(($2 / 1000))"
+	local sub="$((($2 / 100) % 10))"
+	append $var "$val" ","
+	[ $sub -gt 0 ] && append $var "."

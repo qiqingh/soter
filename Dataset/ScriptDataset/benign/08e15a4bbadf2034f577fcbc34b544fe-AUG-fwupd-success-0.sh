@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "`date` LED $0 $1 $2 $3" >> /var/log/messages
+ForcedUpdate=`sysevent get fwup_forced_update`
+
+if [ "$ForcedUpdate" == "0" ]; then
+	echo "fwupd_success" > /proc/bdutil/leds
+else
+	if [ "$2" == "2" ]; then
+		pidof fwupd-led.sh > /dev/null
+		if [ $? = 0 ]; then
+			killall fwupd-led.sh
+		fi
+		/etc/led/fwupd-led.sh fu_success &
+	fi
+fi

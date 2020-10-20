@@ -1,0 +1,5 @@
+	ethif1="eth0"
+	ethif2="eth1"
+	dbg2 "# Ethernet interface list"
+	dbg2 "\$ethif1=$ethif1\n\$ethif2=$ethif2"
+	RPS_IF_LIST="$RPS_IF_LIST $ethif1 $ethif2"

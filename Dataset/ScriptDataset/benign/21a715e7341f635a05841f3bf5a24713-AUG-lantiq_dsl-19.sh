@@ -1,0 +1,11 @@
+	vendor
+	chipset
+	xtse
+	profile
+	line_state
+	errors
+	power_mode
+	latency_delay
+	data_rates
+	line_data
+	line_uptime

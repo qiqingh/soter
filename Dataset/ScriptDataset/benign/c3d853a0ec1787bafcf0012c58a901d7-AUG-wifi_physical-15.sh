@@ -1,0 +1,9 @@
+	PHY_IF=$1
+	SYSCFG_INDEX=`syscfg_get "$PHY_IF"_syscfg_index`
+	SYSCFG_HTGREENFIELD_PREAMBLE=`syscfg_get "$SYSCFG_INDEX"_grn_field_pre`
+	if [ "$SYSCFG_HTGREENFIELD_PREAMBLE" = "enabled" ]; then
+		HTGREENFIELD_PREAMBLE=1
+	else
+		HTGREENFIELD_PREAMBLE=0
+	fi
+	echo "$HTGREENFIELD_PREAMBLE"

@@ -1,0 +1,1 @@
+   rm -f $PROGRESS_SCRIPT_FILE

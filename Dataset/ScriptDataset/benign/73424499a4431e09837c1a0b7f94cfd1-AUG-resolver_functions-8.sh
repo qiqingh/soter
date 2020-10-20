@@ -1,0 +1,37 @@
+    if [ "`syscfg get hardware_vendor_name`" = "Broadcom" ] ; then
+        is_platform_pinnacles
+        IS_PINNACLES=$?
+        lan_ports=`syscfg get switch::router_1::port_numbers`
+        if [ "$IS_PINNACLES" = "1" ] ; then       
+            if [ -n "$lan_ports" ] ; then
+                for i in $lan_ports; do
+                    et robowr 0x1$i 0x00 0x1940
+                done
+                sleep 1.5
+                for i in $lan_ports; do
+                    et robowr 0x1$i 0x00 0x1140
+                done
+            fi
+        else
+            if [ -n "$lan_ports" ] ; then
+                for i in $lan_ports; do
+                    et phywr $i 0 0x1940
+                done
+                sleep 1.5
+                for i in $lan_ports; do
+                    et phywr $i 0 0x1140
+                done
+            fi
+        fi
+    else
+        [ -d /sys/class/neta-switch ] && lan_ports=/sys/class/neta-switch/port[0123]/power
+        [ -n "$lan_ports" ] && {
+	        for i in $lan_ports; do
+	            echo 0 > $i
+	        done
+	        sleep 1.5
+	        for i in $lan_ports; do
+	            echo 1 > $i
+	        done
+        }
+    fi
