@@ -8,9 +8,9 @@ SOTER features both early and lightweight detections.
 
 
 ## Demos
-### Set up virtual devices [https://youtu.be/mBSR4ugrKgU]
+### Set up virtual devices [https://youtu.be/3MI5ux2j_6k]
 
-[![demo](https://github.com/soter-project/soter/blob/main/1_set_up_virtual_device.png)](https://youtu.be/mBSR4ugrKgU)
+[![demo](https://github.com/soter-project/soter/blob/main/1_set_up_virtual_device.png)](https://youtu.be/3MI5ux2j_6k)
 
 
 ### Collect honeypot logs [https://youtu.be/5bp0RjTIi5g]
